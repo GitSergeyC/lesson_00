@@ -8,3 +8,81 @@ a {
 	text-decoration: none;
 	color: black;
 }
+
+.header {
+	background-color: #999E84;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.header__content {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 20px;
+	padding-left: 39px;
+
+}
+
+.header__logo {
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 29.26px;
+	display: flex;
+	align-items: center;
+}
+
+.header__logo-image {
+	margin-right: -9px;
+	padding: 3px 20px 0 0;
+}
+
+
+.header-logo {
+	display: flex;
+	align-items: center;
+}
+
+.header__nav {
+	display: flex;
+	align-items: center;
+	padding-right: 55px;
+}
+
+.menu {
+	display: flex;
+	align-items: center;
+}
+
+.menu__item {
+	list-style: none;
+}
+
+.menu__link {
+	margin-right: 36px;
+	color: #ffffff;
+	text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.menu__link{
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24.38px;
+	color: #ffffff;
+}
+
+.header__tel {
+	display: flex;
+	align-items: center;
+	margin-right: 20px;
+}
+
+.header__phone {
+	font-size: 20px;
+	line-height: 24.38px;
+	font-weight: 400;
+	color: #ffffff;
+	margin-left: 11px;
+}
