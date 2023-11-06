@@ -143,3 +143,103 @@ a {
 .main-page__image {
 	padding-top: 67px;
 }
+
+.about-us__content {
+	margin-top: 52px;
+}
+
+.about-us__headline {
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 36.57px;
+}
+
+.about-us__about-us {
+	max-width: 1017px;
+	margin: 37px auto 0;
+	text-align: center;
+	font-size: 20px;
+	line-height: 24.38px;
+}
+
+.about-us__it {
+	margin-top: 57px;
+	font-size: 20px;
+	line-height: 24.38px;
+}
+
+.about-us__icon {
+	display: flex;
+	justify-content: space-around;
+}
+
+
+.about-us__icon-all {
+	display: flex;
+}
+
+.quality__image {
+	background-color: #C4C4C4;
+	width: 70px;
+	height: 66px;
+	align-items: center;
+}
+
+.about-us__info {
+	max-width: 145px;
+	margin-left: 27px;
+
+}
+
+.about-us__info-text {
+	font-size: 20px;
+	line-height: 24.38px;
+
+}
+
+.info-text {
+	font-size: 14px;
+	line-height: 17.07px;
+}
+
+.about-us__reviews {
+	padding: 81px 0 42px 0;
+	font-size: 20px;
+	line-height: 24.38px;
+}
+
+.about-us__block-reviews1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.about-us__block-reviews {
+	background-color: #ccc;
+	border-radius: 15px;
+	width: 465px;
+	height: 142px;
+}
+
+.about-us__reviews-block {
+	margin: 18px auto 0;
+	width: 320px;
+	text-align: center;
+	font-style: italic;
+	font-size: 20px;
+	line-height: 24.38px;
+}
+
+.about-us__reviews_name {
+	font-size: 20px;
+	line-height: 24.38px;
+	text-align: end;
+}
+
+.about-us__left-arrow {
+	margin-right: 35px;
+}
+
+.about-us__right-arrow {
+	margin-left: 35px;
+}
