@@ -278,3 +278,72 @@ a {
 	align-items: center;
 	padding: 12px 0 18px 0;
 }
+
+.contacts__headline {
+	margin: 49px 0 50px 0;
+}
+
+.contacts__info-box {
+	display: flex;
+	justify-content: space-around;
+}
+
+.contacts__info {
+	max-width: 444px;
+	max-height: 342px;
+	padding-right: 40px;
+}
+
+.contacts__text {
+	margin-bottom: 45px;
+	font-size: 24px;
+	line-height: 29.26px;
+}
+
+
+.contacts__conteiner {
+	display: flex;
+	align-items: center;
+	margin-bottom: 38px;
+	font-size: 24px;
+	line-height: 29.26px;
+}
+
+.contacts__image {
+	width: 67px;
+	height: 62px;
+	margin-right: 40px;
+}
+
+.contacts__form {
+	max-width: 365px;
+	max-height: 404px;
+}
+
+.contacts__input-box {
+	padding-bottom: 45px;
+}
+
+input[placeholder],
+.contacts__btn {
+	box-sizing: border-box;
+	padding-left: 26px;
+	width: 362px;
+	height: 81px;
+	color: rgba(0, 0, 0, 0.46);
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 29.26px;
+}
+
+input[type=text],
+input[type=tel] {
+	color: #000000;
+}
+
+.contacts__btn {
+	color: rgba(0, 0, 0, 1);
+	border: none;
+	width: 363px;
+	height: 81px;
+}
