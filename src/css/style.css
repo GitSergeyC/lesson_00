@@ -243,3 +243,38 @@ a {
 .about-us__right-arrow {
 	margin-left: 35px;
 }
+
+.portfolio__heading {
+	padding-top: 22px;
+	padding-left: 15px;
+	margin: 85px 0 41px 0;
+	color: #ffffff;
+	font-size: 30px;
+	line-height: 36.57px;
+	font-weight: normal;
+}
+
+.portfolio__block-reviews {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.portfolio__left-arrow {
+	padding-bottom: 14px;
+}
+
+.block-portfolio {
+	margin: 0 12px 0;
+}
+
+.portfolio__right-arrow {
+	padding-bottom: 14px;
+}
+
+.portfolio__dots {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 12px 0 18px 0;
+}
