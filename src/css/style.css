@@ -93,6 +93,45 @@ a {
 	color: #ffffff;
 }
 
+.header__burger-btn {
+	display: none;
+	position: relative;
+	width: 40px;
+	height: 40px;
+	border: none;
+	background-color: transparent;
+}
+
+.header__burger-btn span {
+	position: absolute;
+	width: 30px;
+	height: 3px;
+	background-color: #000000;
+	left: 5px;
+	transition: transform .5s, opacity .5s, background-color .5s;
+}
+
+.header__burger-btn span:nth-child(1) {
+	transform: translateY(-10px);
+}
+
+.header__burger-btn span:nth-child(3) {
+	transform: translateY(10px);
+}
+
+.header__content.open	.header__burger-btn span:nth-child(1) {
+	transform: translateY(0) rotate(-45deg);
+	
+}
+
+.header__content.open	.header__burger-btn span:nth-child(2) {
+	opacity: 0;
+}
+
+.header__content.open	.header__burger-btn span:nth-child(3) {
+	transform: translateY(0) rotate(45deg);
+}
+
 .main-page {
 	background-color: #999E84;
 
@@ -386,24 +425,52 @@ input[type=tel] {
 
 @media(max-width: 1000px) {
 	.header__content {
-		justify-content: flex-start;
+		justify-content: space-around;
+	}
+
+	.header__content.open .header__nav {
+		transform: translateX(100%);
 	}
 
 	.header__logo-image {
-		display: none;
+		display: block;
 	}
 
 	.header__nav {
-		display: none;
+		align-items: flex-start;
+		box-sizing: border-box;
+		position: absolute;
+		left: -50vw;
+		top: 0;
+		width: 50vw;
+		height: 100vh;
+		background-color: #999E84;
+		padding: 20px;
+		transition: transform .5s;
 	}
 
 	.logo-text__padding-top {
 		display: none;
 	}
 
+	.menu {
+		display: block;
+	}
+
+	.menu__link {
+		display: block;
+		margin-right: 0;
+		padding: 10px 0;
+	}
+
 	.header__phone {
 		padding-top: 10px;
 	}
+
+	.header__burger-btn {
+		display: block;
+	}
+
 
 	.main-page__image {
 		padding: 0;
