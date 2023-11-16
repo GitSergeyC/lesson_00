@@ -119,16 +119,16 @@ a {
 	transform: translateY(10px);
 }
 
-.header__content.open	.header__burger-btn span:nth-child(1) {
+.header__content.open .header__burger-btn span:nth-child(1) {
 	transform: translateY(0) rotate(-45deg);
-	
+
 }
 
-.header__content.open	.header__burger-btn span:nth-child(2) {
+.header__content.open .header__burger-btn span:nth-child(2) {
 	opacity: 0;
 }
 
-.header__content.open	.header__burger-btn span:nth-child(3) {
+.header__content.open .header__burger-btn span:nth-child(3) {
 	transform: translateY(0) rotate(45deg);
 }
 
@@ -335,6 +335,10 @@ a {
 	padding: 12px 0 18px 0;
 }
 
+.portfolio__dots-img {
+	max-width: 30%;
+}
+
 .contacts__headline {
 	margin: 49px 0 50px 0;
 }
@@ -382,9 +386,7 @@ a {
 
 input[placeholder],
 .contacts__btn {
-	box-sizing: border-box;
-	padding-left: 26px;
-	width: 362px;
+	width: calc(362px - 10%);
 	height: 81px;
 	color: rgba(0, 0, 0, 0.46);
 	font-weight: 700;
@@ -394,14 +396,16 @@ input[placeholder],
 
 input[type=text],
 input[type=tel] {
+	padding-left: 26px;
 	color: #000000;
+	border: 1px solid #C4C4C4;
 }
 
 .contacts__btn {
 	color: rgba(0, 0, 0, 1);
+	background-color: #C4C4C4;
+	cursor: pointer;
 	border: none;
-	width: 363px;
-	height: 81px;
 }
 
 .footer {
@@ -476,9 +480,9 @@ input[type=tel] {
 		padding: 0;
 	}
 
-.main-page__heading {
-	padding-top: 0px;
-}
+	.main-page__heading {
+		padding-top: 0px;
+	}
 
 	.main-page__content {
 		flex-wrap: wrap-reverse;
@@ -492,6 +496,7 @@ input[type=tel] {
 }
 
 @media(max-width: 800px) {
+
 	.contacts__info-box,
 	.about-us__icon {
 		flex-wrap: wrap;
@@ -528,5 +533,27 @@ input[type=tel] {
 	.about-us__left-arrow,
 	.about-us__right-arrow {
 		margin: 0;
+	}
+
+	.about-us__block-reviews {
+		width: 270px;
+		height: 130px;
+	}
+
+
+
+	.about-us__reviews-block {
+		width: 260px;
+		font-size: 17px;
+		line-height: 21.38px;
+	}
+
+	.about-us__reviews_name {
+		font-size: 16px;
+		line-height: 37.38px;
+	}
+
+	.contacts__info {
+		padding-right: 0;
 	}
 }
