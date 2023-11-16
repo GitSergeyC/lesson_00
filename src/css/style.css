@@ -14,8 +14,9 @@ a {
 }
 
 .container {
-	max-width: 1200px;
+	max-width: 1230px;
 	margin: 0 auto;
+	padding: 0 15px;
 }
 
 .header__content {
@@ -92,6 +93,45 @@ a {
 	color: #ffffff;
 }
 
+.header__burger-btn {
+	display: none;
+	position: relative;
+	width: 40px;
+	height: 40px;
+	border: none;
+	background-color: transparent;
+}
+
+.header__burger-btn span {
+	position: absolute;
+	width: 30px;
+	height: 3px;
+	background-color: #000000;
+	left: 5px;
+	transition: transform .5s, opacity .5s, background-color .5s;
+}
+
+.header__burger-btn span:nth-child(1) {
+	transform: translateY(-10px);
+}
+
+.header__burger-btn span:nth-child(3) {
+	transform: translateY(10px);
+}
+
+.header__content.open .header__burger-btn span:nth-child(1) {
+	transform: translateY(0) rotate(-45deg);
+
+}
+
+.header__content.open .header__burger-btn span:nth-child(2) {
+	opacity: 0;
+}
+
+.header__content.open .header__burger-btn span:nth-child(3) {
+	transform: translateY(0) rotate(45deg);
+}
+
 .main-page {
 	background-color: #999E84;
 
@@ -105,7 +145,8 @@ a {
 }
 
 .main-page__info {
-	width: 366px;
+	max-width: 366px;
+
 }
 
 .main-page__heading {
@@ -113,7 +154,6 @@ a {
 	font-size: 36px;
 	line-height: 43.88px;
 	color: #ffffff;
-	margin: 0;
 	padding-top: 85px;
 	width: 250px;
 }
@@ -142,6 +182,10 @@ a {
 
 .main-page__image {
 	padding-top: 67px;
+}
+
+.main-page__image-size {
+	max-width: 100%;
 }
 
 .about-us__content {
@@ -240,8 +284,16 @@ a {
 	margin-right: 35px;
 }
 
+.left-arrow {
+	max-width: 100%;
+}
+
 .about-us__right-arrow {
 	margin-left: 35px;
+}
+
+.right-arrow1 {
+	max-width: 100%;
 }
 
 .portfolio__heading {
@@ -268,6 +320,10 @@ a {
 	margin: 0 12px 0;
 }
 
+.block-portfolio-image {
+	max-width: 100%;
+}
+
 .portfolio__right-arrow {
 	padding-bottom: 14px;
 }
@@ -277,6 +333,10 @@ a {
 	justify-content: center;
 	align-items: center;
 	padding: 12px 0 18px 0;
+}
+
+.portfolio__dots-img {
+	max-width: 30%;
 }
 
 .contacts__headline {
@@ -326,9 +386,7 @@ a {
 
 input[placeholder],
 .contacts__btn {
-	box-sizing: border-box;
-	padding-left: 26px;
-	width: 362px;
+	width: calc(362px - 10%);
 	height: 81px;
 	color: rgba(0, 0, 0, 0.46);
 	font-weight: 700;
@@ -338,14 +396,16 @@ input[placeholder],
 
 input[type=text],
 input[type=tel] {
+	padding-left: 26px;
 	color: #000000;
+	border: 1px solid #C4C4C4;
 }
 
 .contacts__btn {
 	color: rgba(0, 0, 0, 1);
+	background-color: #C4C4C4;
+	cursor: pointer;
 	border: none;
-	width: 363px;
-	height: 81px;
 }
 
 .footer {
@@ -365,4 +425,135 @@ input[type=tel] {
 
 .footer__address {
 	max-width: 135px;
+}
+
+@media(max-width: 1000px) {
+	.header__content {
+		justify-content: space-around;
+	}
+
+	.header__content.open .header__nav {
+		transform: translateX(100%);
+	}
+
+	.header__logo-image {
+		display: block;
+	}
+
+	.header__nav {
+		align-items: flex-start;
+		box-sizing: border-box;
+		position: absolute;
+		left: -50vw;
+		top: 0;
+		width: 50vw;
+		height: 100vh;
+		background-color: #999E84;
+		padding: 20px;
+		transition: transform .5s;
+	}
+
+	.logo-text__padding-top {
+		display: none;
+	}
+
+	.menu {
+		display: block;
+	}
+
+	.menu__link {
+		display: block;
+		margin-right: 0;
+		padding: 10px 0;
+	}
+
+	.header__phone {
+		padding-top: 10px;
+	}
+
+	.header__burger-btn {
+		display: block;
+	}
+
+
+	.main-page__image {
+		padding: 0;
+	}
+
+	.main-page__heading {
+		padding-top: 0px;
+	}
+
+	.main-page__content {
+		flex-wrap: wrap-reverse;
+		justify-content: center
+	}
+
+	.main-page__text,
+	.main-page__button {
+		margin-top: 24px;
+	}
+}
+
+@media(max-width: 800px) {
+
+	.contacts__info-box,
+	.about-us__icon {
+		flex-wrap: wrap;
+	}
+
+	.about-us__icon-all {
+		padding-bottom: 35px;
+	}
+}
+
+@media(max-width: 500px) {
+	.header__content {
+		padding: 0;
+	}
+
+	.header__logo-image {
+		max-height: 80%;
+		padding: 0;
+	}
+
+	.header__tel-icon {
+		max-height: 35%;
+	}
+
+	.logo-text__padding-top,
+	.header__phone {
+		font-size: 0.8em;
+	}
+
+	.main-page__content {
+		justify-content: center;
+	}
+
+	.about-us__left-arrow,
+	.about-us__right-arrow {
+		margin: 0;
+	}
+
+	.about-us__block-reviews {
+		width: 270px;
+		height: 130px;
+	}
+
+
+
+	.about-us__reviews-block {
+		width: 260px;
+		font-size: 17px;
+		line-height: 21.38px;
+	}
+
+	.about-us__reviews_name {
+		font-size: 16px;
+		line-height: 37.38px;
+	}
+
+	.contacts__info {
+		padding-right: 0;
+	}
 }
