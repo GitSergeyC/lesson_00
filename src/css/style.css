@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
 
-body {
+.hidden {
+	display: none;
+}
+
+.body {
 	font-family: 'Montserrat', sans-serif;
 }
 
@@ -20,12 +24,10 @@ a {
 }
 
 .header__content {
-	background-color: #999E84;
 	display: flex;
 	justify-content: space-between;
 	padding-top: 13px;
 	padding-left: 29px;
-
 }
 
 .header__logo {
@@ -39,7 +41,8 @@ a {
 	padding: 3px 13px 0 0;
 }
 
-.logo-text__padding-top {
+
+.logo-text {
 	padding-top: 15px;
 }
 
@@ -119,16 +122,16 @@ a {
 	transform: translateY(10px);
 }
 
-.header__content.open .header__burger-btn span:nth-child(1) {
+.header__burger-btn.open span:nth-child(1) {
 	transform: translateY(0) rotate(-45deg);
 
 }
 
-.header__content.open .header__burger-btn span:nth-child(2) {
+.header__burger-btn.open span:nth-child(2) {
 	opacity: 0;
 }
 
-.header__content.open .header__burger-btn span:nth-child(3) {
+.header__burger-btn.open span:nth-child(3) {
 	transform: translateY(0) rotate(45deg);
 }
 
@@ -432,7 +435,7 @@ input[type=tel] {
 		justify-content: space-around;
 	}
 
-	.header__content.open .header__nav {
+	.header__burger-btn.open .header__nav {
 		transform: translateX(100%);
 	}
 
